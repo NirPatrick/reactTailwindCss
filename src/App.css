@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clip-triangle {
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+  /* Appliquer la personnalisation de la scrollbar */
+::-webkit-scrollbar {
+    @apply w-0 h-auto; /* Largeur de la scrollbar */
+  }
+  
+  /* Piste de la scrollbar */
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-lg; /* Couleur de la piste et arrondir les bords */
+  }
+  
+  /* Poignée de la scrollbar */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-lg; /* Couleur de la poignée et coins arrondis */
+  }
+  
+  /* Poignée de la scrollbar au survol */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-teal-700; /* Changer la couleur lors du survol */
+  }
+  
+  /* Appliquer un style spécifique pour la scrollbar horizontale */
+  ::-webkit-scrollbar-horizontal {
+    @apply h-2; /* Hauteur de la scrollbar horizontale */
+  }
+  
+  /* Appliquer un style spécifique pour la scrollbar verticale */
+  ::-webkit-scrollbar-vertical {
+    @apply w-2; /* Largeur de la scrollbar verticale */
+  }
+  
